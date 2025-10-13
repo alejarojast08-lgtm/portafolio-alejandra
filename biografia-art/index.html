@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía Art - Alejandra Rojas</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background-color: #d77eee;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+        nav {
+            background-color: #eee;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #d77eee;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #d77eee;
+        }
+        ul {
+            text-align: left;
+        }
+
+        /* 🌸 Ajuste de tamaño y presentación de imágenes */
+        .galeria {
+            text-align: center;
+        }
+        .galeria img {
+            width: 300px;          /* Tamaño uniforme */
+            height: 300px;         /* Mantiene proporción cuadrada */
+            object-fit: cover;     /* Ajusta la imagen sin deformarla */
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+
+        .imagen img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            margin-top: 15px;
+        }
+
+        .proyectos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .proyecto {
+            width: 48%;
+            background-color: #f3f1ff;
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .proyecto h3 {
+            color: #d77eee;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        th {
+            background-color: #d77eee;
+            color: white;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        input, textarea, button {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button, input[type="submit"] {
+            background-color: #d77eee;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover, input[type="submit"]:hover {
+            background-color: #b14ed4;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Biografía Art - Alejandra Rojas</h1>
+        <p>Mi espacio personal donde comparto mi historia, arte y pasiones.</p>
+    </header>
+
+    <nav>
+        <a href="#sobremi">Sobre mí</a>
+        <a href="#galeria">Galería</a>
+        <a href="#horario">Horario</a>
+        <a href="#proyectos">Proyectos</a>
+    </nav>
+
+    <section id="sobremi">
+        <h2>Sobre mí</h2>
+        <p>Hola, soy <strong>Alejandra Rojas</strong>, estudiante de <em>Técnico en Diseño Gráfico</em>. Me apasiona el arte, la creatividad y la comunicación visual. Disfruto crear diseños que transmitan emociones y mensajes claros.</p>
+        <p>Algunos de mis intereses son:</p>
+        <ul>
+            <li>El diseño</li>
+            <li>La música</li>
+            <li>La fotografía</li>
+            <li>La pintura</li>
+        </ul>
+    </section>
+
+    <section id="galeria" class="galeria">
+        <h2>Galería</h2>
+        <p>Algunas imágenes que representan mis intereses y proyectos:</p>
+
+        <img src="imagen1.jpeg" alt="Retrato artístico de Alejandra Rojas">
+        <img src="imagen3.jpeg" alt="Diseño creativo de Alejandra Rojas">
+    </section>
+
+    <section id="horario">
+        <h2>Horario Semanal</h2>
+        <table>
+            <tr>
+                <th>Día</th>
+                <th>Actividad</th>
+                <th>Horario</th>
+            </tr>
+            <tr><td>Lunes</td><td>Diseño Digital</td><td>8:00 am - 10:00 am</td></tr>
+            <tr><td>Martes</td><td>Teoría del Color</td><td>10:00 am - 12:00 pm</td></tr>
+            <tr><td>Miércoles</td><td>Ilustración</td><td>8:00 am - 11:00 am</td></tr>
+            <tr><td>Jueves</td><td>Fotografía</td><td>9:00 am - 11:00 am</td></tr>
+            <tr><td>Viernes</td><td>Diseño Editorial</td><td>8:00 am - 10:00 am</td></tr>
+        </table>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos Destacados</h2>
+        <p>Estos son algunos de los proyectos que reflejan mi proceso creativo y mi pasión por el diseño y la tecnología:</p>
+        <div class="proyectos">
+            <div class="proyecto">
+                <h3>Proyecto 1: Diseño Conceptual “La Dulzura del Espacio”</h3>
+                <p>Inspirado en la relación entre lo cósmico y lo cotidiano, este proyecto combina elementos de fantasía, color y creatividad para transmitir una sensación de ensueño y curiosidad.</p>
+                <p>El diseño fue creado usando herramientas de ilustración digital y edición fotográfica, explorando la interacción entre el arte y la imaginación.</p>
+            </div>
+            <div class="imagen">
+                <img src="imagen2.jpeg" alt="Cartel La dulzura del espacio" style="width:300px; height:auto; border-radius:10px; object-fit:cover;">
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Formulario de Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre"><br><br>
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" placeholder="tucorreo@example.com"><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>📧 Contacto: alejandra.rojas@example.com | 📍 Manizales, Caldas</p>
+        <p>© 2025 Alejandra Rojas - Biografía Art</p>
+    </footer>
+
+</body>
+</html>
+
+
+
