@@ -1,10 +1,14 @@
+<!-- Alejandra -->
+<!-- No hay estructura de carpetas -->
+<!-- Hay codigo css, yo aun no he explicado css -->
+<!-- Hay etiquetas HTML que no he explicado aun -->
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biografía Art - Alejandra Rojas</title>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biografía Art - Alejandra Rojas</title>
+        <style>
         body {
             font-family: "Poppins", sans-serif;
             margin: 0;
@@ -132,96 +136,114 @@
             margin-top: 30px;
         }
     </style>
-</head>
-<body>
+    </head>
+    <body>
 
-    <header>
-        <h1>Biografía Art - Alejandra Rojas</h1>
-        <p>Mi espacio personal donde comparto mi historia, arte y pasiones.</p>
-    </header>
+        <header>
+            <h1>Biografía Art - Alejandra Rojas</h1>
+            <p>Mi espacio personal donde comparto mi historia, arte y
+                pasiones.</p>
+        </header>
+        <!-- La etiqueta nav, deberia ir adentro del header -->
+        <nav>
+            <a href="#sobremi">Sobre mí</a>
+            <a href="#galeria">Galería</a>
+            <a href="#horario">Horario</a>
+            <a href="#proyectos">Proyectos</a>
+        </nav>
 
-    <nav>
-        <a href="#sobremi">Sobre mí</a>
-        <a href="#galeria">Galería</a>
-        <a href="#horario">Horario</a>
-        <a href="#proyectos">Proyectos</a>
-    </nav>
+        <section id="sobremi">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy <strong>Alejandra Rojas</strong>, estudiante de
+                <em>Técnico en Diseño Gráfico</em>. Me apasiona el arte, la
+                creatividad y la comunicación visual. Disfruto crear diseños que
+                transmitan emociones y mensajes claros.</p>
+            <p>Algunos de mis intereses son:</p>
+            <ul>
+                <li>El diseño</li>
+                <li>La música</li>
+                <li>La fotografía</li>
+                <li>La pintura</li>
+            </ul>
+        </section>
 
-    <section id="sobremi">
-        <h2>Sobre mí</h2>
-        <p>Hola, soy <strong>Alejandra Rojas</strong>, estudiante de <em>Técnico en Diseño Gráfico</em>. Me apasiona el arte, la creatividad y la comunicación visual. Disfruto crear diseños que transmitan emociones y mensajes claros.</p>
-        <p>Algunos de mis intereses son:</p>
-        <ul>
-            <li>El diseño</li>
-            <li>La música</li>
-            <li>La fotografía</li>
-            <li>La pintura</li>
-        </ul>
-    </section>
+        <section id="galeria" class="galeria">
+            <h2>Galería</h2>
+            <p>Algunas imágenes que representan mis intereses y proyectos:</p>
 
-    <section id="galeria" class="galeria">
-        <h2>Galería</h2>
-        <p>Algunas imágenes que representan mis intereses y proyectos:</p>
+            <img src="imagen1.jpeg" alt="Retrato artístico de Alejandra Rojas">
+            <img src="imagen3.jpeg" alt="Diseño creativo de Alejandra Rojas">
+        </section>
 
-        <img src="imagen1.jpeg" alt="Retrato artístico de Alejandra Rojas">
-        <img src="imagen3.jpeg" alt="Diseño creativo de Alejandra Rojas">
-    </section>
+        <section id="horario">
+            <h2>Horario Semanal</h2>
+            <table>
+                <tr>
+                    <th>Día</th>
+                    <th>Actividad</th>
+                    <th>Horario</th>
+                </tr>
+                <tr><td>Lunes</td><td>Diseño Digital</td><td>8:00 am - 10:00
+                        am</td></tr>
+                <tr><td>Martes</td><td>Teoría del Color</td><td>10:00 am - 12:00
+                        pm</td></tr>
+                <tr><td>Miércoles</td><td>Ilustración</td><td>8:00 am - 11:00
+                        am</td></tr>
+                <tr><td>Jueves</td><td>Fotografía</td><td>9:00 am - 11:00
+                        am</td></tr>
+                <tr><td>Viernes</td><td>Diseño Editorial</td><td>8:00 am - 10:00
+                        am</td></tr>
+            </table>
+        </section>
 
-    <section id="horario">
-        <h2>Horario Semanal</h2>
-        <table>
-            <tr>
-                <th>Día</th>
-                <th>Actividad</th>
-                <th>Horario</th>
-            </tr>
-            <tr><td>Lunes</td><td>Diseño Digital</td><td>8:00 am - 10:00 am</td></tr>
-            <tr><td>Martes</td><td>Teoría del Color</td><td>10:00 am - 12:00 pm</td></tr>
-            <tr><td>Miércoles</td><td>Ilustración</td><td>8:00 am - 11:00 am</td></tr>
-            <tr><td>Jueves</td><td>Fotografía</td><td>9:00 am - 11:00 am</td></tr>
-            <tr><td>Viernes</td><td>Diseño Editorial</td><td>8:00 am - 10:00 am</td></tr>
-        </table>
-    </section>
+        <section id="proyectos">
+            <h2>Proyectos Destacados</h2>
+            <p>Estos son algunos de los proyectos que reflejan mi proceso
+                creativo y mi pasión por el diseño y la tecnología:</p>
+            <div class="proyectos">
+                <div class="proyecto">
+                    <h3>Proyecto 1: Diseño Conceptual “La Dulzura del
+                        Espacio”</h3>
+                    <p>Inspirado en la relación entre lo cósmico y lo cotidiano,
+                        este proyecto combina elementos de fantasía, color y
+                        creatividad para transmitir una sensación de ensueño y
+                        curiosidad.</p>
+                    <p>El diseño fue creado usando herramientas de ilustración
+                        digital y edición fotográfica, explorando la interacción
+                        entre el arte y la imaginación.</p>
+                </div>
+                <div class="imagen">
+                    <img src="imagen2.jpeg" alt="Cartel La dulzura del espacio"
+                        style="width:300px; height:auto; border-radius:10px; object-fit:cover;">
+                </div>
 
-    <section id="proyectos">
-        <h2>Proyectos Destacados</h2>
-        <p>Estos son algunos de los proyectos que reflejan mi proceso creativo y mi pasión por el diseño y la tecnología:</p>
-        <div class="proyectos">
-            <div class="proyecto">
-                <h3>Proyecto 1: Diseño Conceptual “La Dulzura del Espacio”</h3>
-                <p>Inspirado en la relación entre lo cósmico y lo cotidiano, este proyecto combina elementos de fantasía, color y creatividad para transmitir una sensación de ensueño y curiosidad.</p>
-                <p>El diseño fue creado usando herramientas de ilustración digital y edición fotográfica, explorando la interacción entre el arte y la imaginación.</p>
             </div>
-            <div class="imagen">
-                <img src="imagen2.jpeg" alt="Cartel La dulzura del espacio" style="width:300px; height:auto; border-radius:10px; object-fit:cover;">
-            </div>
+        </section>
 
-        </div>
-    </section>
+        <section>
+            <h2>Formulario de Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"
+                    placeholder="Tu nombre"><br><br>
 
-    <section>
-        <h2>Formulario de Contacto</h2>
-        <form>
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre"><br><br>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email"
+                    placeholder="tucorreo@example.com"><br><br>
 
-            <label for="email">Correo electrónico:</label><br>
-            <input type="email" id="email" name="email" placeholder="tucorreo@example.com"><br><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4"
+                    placeholder="Escribe tu mensaje aquí..."></textarea><br><br>
 
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
 
-            <input type="submit" value="Enviar">
-        </form>
-    </section>
+        <footer>
+            <p>📧 Contacto: alejandra.rojas@example.com | 📍 Manizales,
+                Caldas</p>
+            <p>© 2025 Alejandra Rojas - Biografía Art</p>
+        </footer>
 
-    <footer>
-        <p>📧 Contacto: alejandra.rojas@example.com | 📍 Manizales, Caldas</p>
-        <p>© 2025 Alejandra Rojas - Biografía Art</p>
-    </footer>
-
-</body>
+    </body>
 </html>
-
-
-
